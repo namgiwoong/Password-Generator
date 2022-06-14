@@ -1,15 +1,82 @@
 //storing all needed characters in variables
 
-//numbers
-var numbers = ["1", "2", "3", "4"];
+var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-//special characters
-var specialCharacters = ["!", "@", "#"];
+var specialCharacters = [
+  "!",
+  "@",
+  "#",
+  "$",
+  "%",
+  "^",
+  "&",
+  "*",
+  "(",
+  ")",
+  "~",
+  "_",
+  "-",
+  "=",
+  "+",
+];
 
-//lower case letters
-var specialCharacters = ["a", "b", "c"];
+var lowerCase = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
 
-//uppercase letters
+var upperCase = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
 
 //What sorts of tasks does my code need to complete
 
