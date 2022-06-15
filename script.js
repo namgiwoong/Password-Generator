@@ -18,6 +18,13 @@ var specialCharacters = [
   "-",
   "=",
   "+",
+  "[",
+  "]",
+  ";",
+  ":",
+  "'",
+  "{",
+  "}",
 ];
 
 var lowerCase = [
@@ -87,22 +94,25 @@ function generatePassword() {
   //IF 'passwordLength' greater than or equal to 8 and 'passwordLength' less than or equal to 128
 
   //IF 'passwordLength' less than 8 OR greater than 128;
-  if () {
-    //end the function early
-    return;
-  }
+  // if () {
+  //end the function early
+  //   return;
+  // }
   // Prompt the user for if they want special characters and store it in a variable
-  var storeCharacter =false;
+  var storeCharacter = false;
   // Prompt the user for if they want numbers and store it in a variable
-  var storeNumber=false;
+  var storeNumber = false;
   // Prompt the user for if they want lowercase and store it in a variable
-  var storeLowercase=false;
+  var storeLowercase = false;
   // Prompt the user for if they want uppercase and store it in a variable
-  var storeUppercase=false;
+  var storeUppercase = false;
   // validate that at least one character choice is true
- if () {
-  return;
- }
+  if (!storeCharacter && !storeNumber && !storeLowercase && !storeUppercase) {
+    // Alert the user they had bad data (need to choose at least one character)
+    return "";
+  }
+
+  //DECLARE a new empty array to store the characters we want to use
   //Randomly select characters
 
   //@see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
