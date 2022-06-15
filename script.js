@@ -82,9 +82,29 @@ var upperCase = [
 
 // Generate Password
 function generatePassword() {
-  // Prompt the user for their passowrd length and store it in a variable
+  // 'Prompt' the user for their 'passwordLength' and store it in a variable
   //Validate the password length and make sure it's a number between or equal to 8 and 128
+  //IF 'passwordLength' greater than or equal to 8 and 'passwordLength' less than or equal to 128
+
+  //IF 'passwordLength' less than 8 OR greater than 128;
+  if () {
+    //end the function early
+    return;
+  }
   // Prompt the user for if they want special characters and store it in a variable
+  var storeCharacter =false;
+  // Prompt the user for if they want numbers and store it in a variable
+  var storeNumber=false;
+  // Prompt the user for if they want lowercase and store it in a variable
+  var storeLowercase=false;
+  // Prompt the user for if they want uppercase and store it in a variable
+  var storeUppercase=false;
+  // validate that at least one character choice is true
+ if () {
+  return;
+ }
+  //Randomly select characters
+
   //@see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 }
 // Assignment Code
