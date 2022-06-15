@@ -147,6 +147,7 @@ function generatePassword() {
   // var 1 =[];
   // var 2 =[];
   var userChoice = [];
+  var randomPassword = "";
   // IF 'specialCharacters' is true
   // combine 'specialCharacters' with 'characters'
   // ___ = ___.concat(1);
@@ -173,6 +174,11 @@ function generatePassword() {
 
   // DECLARE a new empty string to store the password characters
   //for( var i=0; i< 'passwordLength'; i++)
+  for (var i = 0; i < length; i++) {
+    randomPassword = userChoice[Math.floor(Math.random() * userChoice.length)];
+    console.log(randomPassword);
+    return randomPassword;
+  }
 
   //Randomly select characters
   //Adding that character to a building password string
