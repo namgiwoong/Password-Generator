@@ -132,6 +132,16 @@ function generatePassword() {
   //   return "";
   // }
 
+  if (
+    !userNumber &&
+    !userSpecialcharacter &&
+    !userLowercase &&
+    !userUppercase
+  ) {
+    alert("Need to choose at least one character choice");
+    return "";
+  }
+
   //DECLARE a new empty array to store the 'characters' we want to use
   // var ___ = [];
 
