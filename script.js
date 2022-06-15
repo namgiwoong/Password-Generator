@@ -171,13 +171,12 @@ function generatePassword() {
     //Randomly select characters
     //Adding that character to a building password string
 
-    randomPassword = userChoice[Math.floor(Math.random() * userChoice.length)];
+    randomPassword += userChoice[Math.floor(Math.random() * userChoice.length)];
 
     console.log(randomPassword);
-
-    //RETURN the completed string
-    return randomPassword;
   }
+  //RETURN the completed string
+  return randomPassword;
 }
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
