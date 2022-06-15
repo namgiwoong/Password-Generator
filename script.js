@@ -127,10 +127,9 @@ function generatePassword() {
   }
 
   // validate that at least one character choice is true
-  // if (!storeCharacter && !storeNumber && !storeLowercase && !storeUppercase) {
-  // Alert the user they had bad data (need to choose at least one character)
-  //   return "";
-  // }
+  // if (!storeCharacter && !storeNumber && !storeLowercase && !storeUppercase)
+  // -Alert the user they had bad data (need to choose at least one character)
+  //  -return "";
 
   if (
     !userNumber &&
@@ -147,16 +146,33 @@ function generatePassword() {
 
   // var 1 =[];
   // var 2 =[];
+  var userChoice = [];
   // IF 'specialCharacters' is true
   // combine 'specialCharacters' with 'characters'
   // ___ = ___.concat(1);
   // IF 'numbers' is true
   // ___ = ___.concat(1);
 
+  if (userNumber == true) {
+    userChoice = userChoice.concat(numbers);
+  }
+
+  if (userSpecialcharacter == true) {
+    userChoice = userChoice.concat(specialCharacters);
+  }
+
+  if (userLowercase == true) {
+    userChoice = userChoice.concat(lowerCase);
+  }
+
+  if (userUppercase == true) {
+    userChoice = userChoice.concat(upperCase);
+  }
+
   //@see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
   // DECLARE a new empty string to store the password characters
-  //for( var i=0; i< 'passwordLength'; i++){ newPassword += data[Math.floor(Math.random()*data.)]}
+  //for( var i=0; i< 'passwordLength'; i++)
 
   //Randomly select characters
   //Adding that character to a building password string
