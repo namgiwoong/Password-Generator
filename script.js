@@ -92,31 +92,40 @@ function generatePassword() {
   // 'Prompt' the user for their 'passwordLength' and store it in a variable
   var length = prompt("Choose number of characters you want in your password");
 
+  var userNumber;
+  var userSpecialcharacter;
+  var userLowercase;
+  var userUppercase;
+
   //Validate the password length and make sure it's a number between or equal to 8 and 128
-  if (length >= 8 && length <= 128) {
-    confirm("Do you want to include numbers?");
-    confirm("Do you want to include Special characters?");
-    confirm("Do you want to include Lowercase letters?");
-    confirm("Do you want to include Uppercase letters?");
-  } else if (length < 8 || length > 128) {
-    alert("Number of characters must be between or equal to 8 to 128");
-    return;
-  }
   //IF 'passwordLength' greater than or equal to 8 and 'passwordLength' less than or equal to 128
 
+  if (length >= 8 && length <= 128) {
+    // Prompt the user for if they want special characters and store it in a variable
+
+    userNumber = confirm("Do you want to include numbers?");
+
+    // Prompt the user for if they want numbers and store it in a variable
+
+    userSpecialcharacter = confirm(
+      "Do you want to include Special characters?"
+    );
+
+    // Prompt the user for if they want lowercase and store it in a variable
+
+    userLowercase = confirm("Do you want to include Lowercase letters?");
+
+    // Prompt the user for if they want uppercase and store it in a variable
+
+    userUppercase = confirm("Do you want to include Uppercase letters?");
+  }
   //IF 'passwordLength' less than 8 OR greater than 128;
-  // if () {
-  //end the function early
-  //   return;
-  // }
-  // Prompt the user for if they want special characters and store it in a variable
-  var userspecialCharacter = false;
-  // Prompt the user for if they want numbers and store it in a variable
-  var userNumber = false;
-  // Prompt the user for if they want lowercase and store it in a variable
-  var userLowercase = false;
-  // Prompt the user for if they want uppercase and store it in a variable
-  var userUppercase = false;
+  //end the function early: return;
+  else if (length < 8 || length > 128) {
+    alert("Number of characters must be between or equal to 8 to 128");
+    return "";
+  }
+
   // validate that at least one character choice is true
   // if (!storeCharacter && !storeNumber && !storeLowercase && !storeUppercase) {
   // Alert the user they had bad data (need to choose at least one character)
