@@ -98,7 +98,7 @@ function generatePassword() {
   //Validate the password length and make sure it's a number between or equal to 8 and 128
   //IF 'passwordLength' greater than or equal to 8 and 'passwordLength' less than or equal to 128
   var passwordLength = prompt(
-    "Choose number of characters you want in your password"
+    "Choose number between 8 and 128 you want in your password"
   );
   if (passwordLength >= 8 && passwordLength <= 128) {
     // Prompt the user for if they want numbers and store it in a variable

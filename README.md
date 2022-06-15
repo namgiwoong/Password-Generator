@@ -2,7 +2,16 @@
 
 ## Description
 
+- The motivation of this Password-Generator is to modify the code in js file to create an application to generate random password. The key factor of this project is randomly generating password that meets certain criteria in order to create a stonger password for a better security. The goal of Password-Generator project is to prompt the user with the password criteria that contains password length, numbers, special characters, uppercases, and lowercases.
+
 ## Work Done
+
+- Series of prompts are generated when "generate password" button is clicked.
+- Alerts when other than numbers between 8 to 128 are typed and propmps back to beginning.
+- When each prompts are answered, it validates and matches with the selected criteria the user chose.
+- Password generates when all the prompts are answered.
+- Password is written to the page when its generated.
+- description of what the code does is commented on top of the code in the js file.
 
 ## Links
 
